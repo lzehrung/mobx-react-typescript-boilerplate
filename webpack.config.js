@@ -13,6 +13,10 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/static/'
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(), 
+    new webpack.NoEmitOnErrorsPlugin()
+  ],
   resolve: {
     extensions: ['.js', '.ts', '.tsx']
   },
